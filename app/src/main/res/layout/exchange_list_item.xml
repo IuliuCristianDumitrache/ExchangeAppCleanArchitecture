@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/palette_pure_black"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/top_view_double_row"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/teal_200"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bottom_view_double_row"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/teal_200"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/DescriptionLightTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/regular"
+        android:paddingTop="@dimen/smaller_regular"
+        android:paddingEnd="@dimen/regular"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Section Title" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        style="@style/SmallDescriptionTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/regular"
+        android:paddingEnd="@dimen/regular"
+        android:paddingBottom="@dimen/smaller_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="1.0 (1)" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ATNM</string>
+    <string name="no_internet_error">No Internet Connection</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="an_error_has_occured">An error has occured, please try again</string>
+    <string name="dismiss">Dismiss</string>
+</resources>
