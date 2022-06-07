@@ -4,13 +4,13 @@ Demo App
 
 Technical specifications
 
-Clean MVVM architecture 
-Design follow Material design guidelines
-Jetpack Components used: data binding, livedata, navigation, viewmodel
-Flows
-Coroutines
-Dependency injection with Hilt
-Retrofit
+- Clean MVVM architecture 
+- Design follow Material design guidelines
+- Jetpack Components used: data binding, livedata, navigation, viewmodel
+- Flows
+- Coroutines
+- Dependency injection with Hilt
+- Retrofit
 
 
 
