@@ -3,7 +3,6 @@ package com.example.atnm.utils
 import com.example.atnm.extensions.roundDouble
 import com.example.atnm.models.Rates
 
-
 object ConversionUtil {
     private lateinit var visited: HashSet<String>
     private lateinit var exchangeRates: ArrayList<Rates>

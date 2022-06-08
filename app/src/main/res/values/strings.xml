@@ -4,4 +4,7 @@
     <string name="something_went_wrong">Something went wrong</string>
     <string name="an_error_has_occured">An error has occured, please try again</string>
     <string name="dismiss">Dismiss</string>
+    <string name="to_from">To: %1$s \nFrom: %2$s</string>
+    <string name="rate">Rate: %1$s</string>
+
 </resources>

@@ -34,8 +34,4 @@ class ExchangeAdapter() :
             }
         }
     }
-
-    override fun getItemViewType(position: Int): Int {
-        return 1
-    }
 }

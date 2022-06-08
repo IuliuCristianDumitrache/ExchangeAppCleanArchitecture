@@ -27,8 +27,7 @@ class ExchangeViewModel @Inject constructor(private val fetchExchangeUseCase: Fe
 
     val isLoadingInProgress = MutableLiveData(false)
     val exchangeList: MutableLiveData<RatesResponse> = MutableLiveData()
-    val completeExchangeList: MutableLiveData<ArrayList<Rates>> = MutableLiveData()
-
+    val completeExchangeList: MutableLiveData<MutableList<Rates>> = MutableLiveData()
 
     fun getExchangeList() =
         ioScope.launch {
@@ -50,12 +49,12 @@ class ExchangeViewModel @Inject constructor(private val fetchExchangeUseCase: Fe
         }
 
     fun getMissingExchanges(exchangeList: RatesResponse) {
-        val completedExchangeList = arrayListOf<Rates>()
+        val completedExchangeList = hashSetOf<Rates>()
         completedExchangeList.addAll(exchangeList.rates)
 
         ConversionUtil.setRates(exchangeList.rates)
 
-        val missingRates = arrayListOf<Rates>()
+        val missingRates = hashSetOf<Rates>()
         exchangeList.pairs.forEach { pair ->
             missingRates.add(
                 Rates(
@@ -67,6 +66,6 @@ class ExchangeViewModel @Inject constructor(private val fetchExchangeUseCase: Fe
         }
         completedExchangeList.addAll(missingRates)
 
-        completeExchangeList.postValue(completedExchangeList)
+        completeExchangeList.postValue(completedExchangeList.toMutableList())
     }
 }
