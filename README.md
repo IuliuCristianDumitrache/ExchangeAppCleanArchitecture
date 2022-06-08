@@ -2,7 +2,7 @@
 
 Demo App 
 
-![test image size]<img src="https://github.com/IuliuCristianDumitrache/ExchangeAppCleanArchitecture/blob/master/video-1654683000%20(1).gif" width="400" height="790">
+<img src="https://github.com/IuliuCristianDumitrache/ExchangeAppCleanArchitecture/blob/master/video-1654683000%20(1).gif" width="400" height="790">
 
 Technical specifications
 
